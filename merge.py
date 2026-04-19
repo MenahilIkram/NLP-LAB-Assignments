@@ -15,12 +15,12 @@ def merge_files():
                     
                     content = infile.read()
 
-                    # 🔥 har file ka heading add karo
+                   
                     outfile.write(f"===== {filename} =====\n")
                     outfile.write(content)
                     outfile.write("\n\n")
 
-    print("✅ Master dataset file created successfully!")
+    print("Master dataset file created successfully!")
 
 if __name__ == "__main__":
     merge_files()
