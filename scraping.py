@@ -21,7 +21,7 @@ def get_mental_health_data():
 
     os.makedirs("mental_health_data", exist_ok=True)
 
-    # 🔥 powerful search queries
+   
     queries = [
         "mental health",
         "mental disorders",
@@ -38,7 +38,7 @@ def get_mental_health_data():
 
     all_titles = set()
 
-    # 🔍 collect titles
+    # collect titles
     for q in queries:
         try:
             results = wikipedia.search(q, results=50)
@@ -68,7 +68,7 @@ def get_mental_health_data():
         except:
             print("Skipped:", title)
 
-    print(f"\nDone! {count} files saved ✅")
+    print(f"\nDone! {count} files saved ")
 
 
 if __name__ == "__main__":
